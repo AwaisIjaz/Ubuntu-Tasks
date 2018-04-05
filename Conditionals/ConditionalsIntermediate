@@ -1,0 +1,23 @@
+adminai@adminai-VirtualBox:/home$ type Addition
+Addition is a function
+Addition () 
+{ 
+    echo "Enter your first number";
+    read numberOne;
+    echo "Enter your second number";
+    read numberTwo;
+    ((answer = $numberOne + $numberTwo));
+    if (( answer % 2 == 0 )); then
+        echo "Your answer $answer is even";
+    else
+        echo "Your answer $answer is odd";
+    fi
+}
+
+adminai@adminai-VirtualBox:/home$ Addition
+Enter your first number
+4
+Enter your second number
+7
+Your answer 11 is odd
+
