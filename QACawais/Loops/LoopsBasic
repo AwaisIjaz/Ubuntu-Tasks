@@ -1,0 +1,29 @@
+adminai@adminai-VirtualBox:/home$ type loopFrom1
+loopFrom1 is a function
+loopFrom1 () 
+{ 
+    echo "Enter your value";
+    read value;
+    echo "Start the loop";
+    echo "--------------";
+    looper=1;
+    while [ $looper -le $value ]; do
+        echo "${looper}";
+        ((looper++));
+    done
+}
+
+adminai@adminai-VirtualBox:/home$ loopFrom1
+Enter your value
+8
+Start the loop
+--------------
+1
+2
+3
+4
+5
+6
+7
+8
+
