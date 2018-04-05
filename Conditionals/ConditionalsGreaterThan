@@ -1,0 +1,15 @@
+adminai@adminai-VirtualBox:~/QACawais/QACawais$ type greaterThan
+greaterThan is a function
+greaterThan () 
+{ 
+    read number;
+    if [ ${number} -gt 100 ]; then
+        echo "Your value is greater than 100";
+    else
+        echo "Your value is not greater than 100";
+    fi
+}
+adminai@adminai-VirtualBox:~/QACawais/QACawais$ greaterThan
+101
+Your value is greater than 100
+
